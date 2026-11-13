@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Imitazioni · Attilio Bertolucci — edizione digitale di lavoro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#/">
+      <span class="brand-t">Imitazioni</span>
+      <span class="brand-s">Attilio Bertolucci · Scheiwiller 1994 · edizione digitale di lavoro</span>
+    </a>
+    <nav>
+      <a href="#/" data-nav="indice">Traduzioni</a>
+      <a href="#/archivio" data-nav="archivio">Archivio immagini</a>
+      <a href="#/diplomatiche" data-nav="dipl">Diplomatiche</a>
+      <a href="#/allineamento" data-nav="allin">Allineamento</a>
+      <a href="#/nota" data-nav="nota">Nota al testo</a>
+    </nav>
+  </header>
+  <main id="app" tabindex="-1"></main>
+
+  <div id="viewer" class="viewer" hidden>
+    <div class="viewer-bar">
+      <span id="viewer-cap"></span>
+      <span class="viewer-tools">
+        <button data-v="prev" title="Precedente (←)">‹</button>
+        <button data-v="zoomout" title="Riduci (−)">−</button>
+        <button data-v="reset" title="Adatta (0)">⤢</button>
+        <button data-v="zoomin" title="Ingrandisci (+)">+</button>
+        <button data-v="rotate" title="Ruota (r)">⟳</button>
+        <button data-v="next" title="Successiva (→)">›</button>
+        <button data-v="close" title="Chiudi (Esc)">✕</button>
+      </span>
+    </div>
+    <div class="viewer-stage" id="viewer-stage"><img id="viewer-img" alt=""></div>
+  </div>
+
+  <script src="data/data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
