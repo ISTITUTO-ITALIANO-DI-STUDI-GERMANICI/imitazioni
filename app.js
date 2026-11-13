@@ -724,6 +724,11 @@ ${rejected}
         <p>Smart Align ha proposto <b>${al.stats.semantic_raw}</b> collegamenti tra versi (<i>Semantic</i>) e <b>${al.stats.literal}</b>
           tra parole (<i>Literal</i>). Ogni curva collega un verso inglese a quello italiano corrispondente;
           le curve arancioni segnalano versi con più di una corrispondenza.</p>
+        <div class="toolbar">
+          <a class="btn ghost" href="tei/Nutting_SmartAlign_export_ORIGINALE_non_revisionato.tei" download>Scarica l'export DiScEPT originale (TEI)</a>
+          <span class="hint">File così come esportato da Smart Align: non revisionato, con i duplicati. Si può reimportare in DiScEPT.
+            La versione rivista si esporta dal passo 4.</span>
+        </div>
         <div class="ribbon-wrap" id="ribbon">${ribbonSVG(al, an, rev)}</div>
         <div class="legend"><span><i style="background:#9a8f83"></i>proposta</span><span><i style="background:var(--warn)"></i>corrispondenze multiple</span>
           <span><i style="background:var(--ok)"></i>accettata</span><span><i style="background:var(--bad)"></i>rifiutata</span>
